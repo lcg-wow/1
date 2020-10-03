@@ -1,0 +1,30 @@
+git init
+//建立一个本地仓库
+git add file
+//将文件添加到暂存区
+git commit -m"information"
+//将暂存区的文件提交到版本库
+
+git status
+//查看当前状态
+git diff
+//查看文件不同的地方
+
+git log
+//查看历史版本
+git reset --hard HEAD^
+//回退到上一个版本（HEAD^^,HEAD~100）
+git reflog
+//查看历史命令，以回退到未来版本
+
+git checkout -- file
+//丢弃工作区的修改，回退到上一次commit或add的状态
+git reset HEAD file
+//撤销暂存区的修改
+
+rm file 
+//删除工作区的文件
+//使用git checkout -- file以撤销
+git rm file 
+//删除工作区和版本库的文件
+
